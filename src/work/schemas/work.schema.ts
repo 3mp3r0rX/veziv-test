@@ -14,10 +14,10 @@ export class Work {
   @Prop({ required: true })
   imageUrl: string;
 
-  @Prop()
+  @Prop({ required: false })
   clientLink?: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, enum: ['hidden', 'visible'] })
   status: string;
 }
 

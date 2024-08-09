@@ -10,7 +10,7 @@ export class WorkService {
   constructor(
     @InjectModel('Work') private readonly workModel: Model<WorkDocument>,
   ) {}
-
+  
   async findAll(): Promise<Work[]> {
     return this.workModel.find().exec();
   }

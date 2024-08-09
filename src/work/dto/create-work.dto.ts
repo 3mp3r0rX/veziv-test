@@ -1,8 +1,7 @@
 export class CreateWorkDto {
-    readonly title: string;
-    readonly description: string;
-    readonly imageUrl: string;
-    readonly clientLink?: string;
-    readonly status: string;
-  }
-  
+  title: string;
+  description: string;
+  imageUrl: string;
+  clientLink?: string;
+  status: string;
+}
